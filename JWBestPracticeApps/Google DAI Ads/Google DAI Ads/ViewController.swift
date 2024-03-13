@@ -11,8 +11,8 @@ import JWPlayerKit
 class ViewController: JWPlayerViewController {
     private let videoID = "tears-of-steel"
     private let cmsID = "2528370"
-    private let assetKey = "sN_IYUG8STe1ZzhIIE_ksA"
-    private let fallbackVideoUrlString = "https://cdn.jwplayer.com/videos/CXz339Xh-sJF8m8CA.mp4"
+    private let assetKey = "8mneTYv6SiyVc0bTQDNXkA"
+    private let fallbackVideoUrlString = "https://iplstream.noon.com/hls/live/2110089/MENA-SEA-PK-HOME/7492/88079/master.m3u8?hdnts=exp=1751862392~acl=/*~id=iplstream@noon.com~data=streampanel~hmac=5d5c38d2a22a0711d23a486d83b464399d9c8e3e0f0c53f11a9a5e71ea7bbbd4"
     private let posterUrlString = "https://cdn.jwplayer.com/thumbs/CXz339Xh-720.jpg"
 
     override func viewDidLoad() {
@@ -41,9 +41,9 @@ class ViewController: JWPlayerViewController {
             // Second, use the JWGoogleDAIStreamBuilder() to create a JWGoogleDAIStream that will be used by the advertising configuration.
             let daiStream = try JWGoogleDAIStreamBuilder()
                 // For VoD streams use vodStreamInfo(videoID: cmsID:) to create the JWGoogleDAIStream
-                .vodStreamInfo(videoID: videoID, cmsID: cmsID)
+//                 .vodStreamInfo(videoID: videoID, cmsID: cmsID)
                 // For Live streams use liveStreamInfo(assetKey:) to create the JWGoogleDAIStream
-                //.liveStreamInfo(assetKey: assetKey)
+                .liveStreamInfo(assetKey: assetKey)
                 // If both are set (vod & live) the builder will throw an error.
                 .build()
 

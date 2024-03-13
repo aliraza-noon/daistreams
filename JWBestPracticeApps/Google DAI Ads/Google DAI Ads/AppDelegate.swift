@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
-        #warning("Add your JW Player license key.")
-        // JWPlayerKitLicense.setLicenseKey(<#key: String#>)
+        // #warning("Add your JW Player license key.")
+        JWPlayerKitLicense.setLicenseKey("3WkEeSmY3k5Ucfv+V8ClHFypCE0TdD+kIDFqa9xjBk8KuvzV")
 
         return true
     }
